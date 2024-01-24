@@ -1,0 +1,10 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-footer {
+  display: block;
+  background: #F5F5F5;
+}

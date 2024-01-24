@@ -1,0 +1,10 @@
+.nav-desktop {
+  display: block;
+  background: #F5F5F5;
+}
+
+@media (280px <=width <=1200px) {
+  .nav-desktop {
+    display: none;
+  }
+}

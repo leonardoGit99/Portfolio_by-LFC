@@ -1,0 +1,11 @@
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  background: #F5F5F5;
+}
+
+.logo {
+  font-size: 2rem;
+}
