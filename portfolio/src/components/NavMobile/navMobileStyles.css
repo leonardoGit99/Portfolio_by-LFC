@@ -1,3 +1,11 @@
+.burger-icon {
+  font-size: 1.5rem !important;
+}
+
+.drawer {
+  background: #F5F5F5 !important;
+}
+
 .nav-mobile {
   display: block;
   background: #F5F5F5;

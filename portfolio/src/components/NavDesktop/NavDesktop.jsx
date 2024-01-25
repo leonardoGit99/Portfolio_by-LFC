@@ -1,9 +1,10 @@
 import React from 'react'
-import { Menu } from 'antd';
+import { Anchor, Menu } from 'antd';
 import './navDesktopStyles.css';
 
 function NavDesktop({ items, selectedTab, setSelectedTab }) {
-  
+  const { Link: AnchorLink } = Anchor;
+
   return (
     <>
       <Menu

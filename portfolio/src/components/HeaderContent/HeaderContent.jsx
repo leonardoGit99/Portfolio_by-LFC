@@ -17,7 +17,7 @@ function HeaderContent({ visible, showDrawer, closeDrawer, items, selectedTab, s
     };
   }, []);
   return (
-    <div className="header-container">
+    <div id="contact" className="header-container">
       <div className="logo">
         Leonardo Fuentes C.
       </div>

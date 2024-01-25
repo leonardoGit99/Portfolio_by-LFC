@@ -15,7 +15,7 @@ function FooterContent({ items, selectedTab, setSelectedTab }) {
       >
       </Menu>
       </div>
-      <p>Copyright &copy; 2024 Leonardo Fuentes C. All Rigths Reserved.</p>
+      <p>Copyright &copy; {new Date().getFullYear()} Leonardo Fuentes C. All Rigths Reserved.</p>
     </div>
   );
 };

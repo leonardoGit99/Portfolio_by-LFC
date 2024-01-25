@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LayoutPortfolio from './layouts/LayoutPortfolio/LayoutPortfolio';
-import './App.css';
 import Portfolio from './pages/Portfolio';
+import './App.css';
 
 function App() {
 

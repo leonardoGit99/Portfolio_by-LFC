@@ -1,10 +1,11 @@
 import React from 'react'
 import { Menu, Drawer } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
+import './navMobileStyles.css';
 
 function NavMobile({ visible, showDrawer, closeDrawer, items, selectedTab, setSelectedTab }) {
   const burgerButton = [
-    { key: "burguerButton", icon: !visible ? <MenuOutlined onClick={showDrawer}/> : null },
+    { key: "burguerButton", icon: !visible ? <MenuOutlined className='burger-icon' onClick={showDrawer}/> : null },
   ]
   return (
     <>
@@ -17,6 +18,7 @@ function NavMobile({ visible, showDrawer, closeDrawer, items, selectedTab, setSe
       </div>
       
       <Drawer
+        className='drawer'
         title="Portfolio LFC"
         placement="right"
         closable={true}
