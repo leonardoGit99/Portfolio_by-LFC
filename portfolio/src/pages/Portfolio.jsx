@@ -6,12 +6,15 @@ import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 
 
 function Portfolio() {
+  const handleArrowClick = (section) => {
+    location.href = `/#${section}`
+  }
   return (
     <>
       <ProfileSection />
-      <AboutSection />
-      <ExperienceSection />
-      <ProjectsSection />
+      <AboutSection handleArrowClick={handleArrowClick} />
+      <ExperienceSection handleArrowClick={handleArrowClick} />
+      <ProjectsSection handleArrowClick={handleArrowClick} />
     </>
   )
 }

@@ -1,0 +1,85 @@
+#about {
+  position: relative;
+}
+
+.about-section-flex-container {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+
+.about_p1 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.about-main-text {
+  text-align: center;
+}
+
+
+.title__about {
+  font-size: 2.9rem;
+  margin-top: 0;
+}
+
+
+.about-img-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.about-img {
+  border-radius: 2rem;
+}
+
+.about-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.details-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.experience-container, .education-container {
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.experience-icon, .education-icon {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.experience_title, .education_title {
+  margin: 0;
+}
+
+.about_p2 {
+  text-align: justify;
+  font-weight: 500 !important;
+}
+
+.arrow-icon {
+  cursor: pointer;
+  height: 2rem;
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.arrow-icon:hover {
+  height: 2.2rem;
+}

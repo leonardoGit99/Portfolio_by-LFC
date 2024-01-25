@@ -5,6 +5,11 @@ section {
   min-height: fit-content;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* #root {
   max-width: 1280px;

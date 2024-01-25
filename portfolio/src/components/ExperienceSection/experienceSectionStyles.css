@@ -1,0 +1,44 @@
+.experience-main-text {
+  text-align: center;
+}
+
+.experience_p1 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.title-experience {
+  font-size: 2.9rem;
+  margin-top: 0;
+}
+
+.experience-containers {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.frontend-experience,
+.backend-experience {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+
+.frontend-experience_title,
+.backend-experience_title {
+  text-align: center;
+}
+
+.frontend-experience_list {
+  display: flex;
+  justify-content: center;
+}
+
+/* .list-frontend-flex-container {}
+
+.backend-experience_list {} */
