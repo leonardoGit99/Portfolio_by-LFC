@@ -1,3 +1,7 @@
+#experience {
+  position: relative;
+}
+
 .experience-main-text {
   text-align: center;
 }
@@ -16,6 +20,7 @@
 .experience-containers {
   display: flex;
   gap: 2.5rem;
+  margin-top: 5rem;
 }
 
 .frontend-experience,
@@ -34,10 +39,48 @@
   text-align: center;
 }
 
-.frontend-experience_list {
-  display: flex;
-  justify-content: center;
+.experience-subtitle {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
+
+.frontend-experience-list {
+}
+
+.frontend-list-item-flex-container, .backend-list-item-flex-container{
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.frontend-list-item, .backend-list-item {
+  display: flex;
+  gap: 2rem;
+}
+
+.frontend-icon, .backend-icon {
+  font-size: 1.3rem;
+}
+
+.frontend-text, .backend-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.frontend-text h3 {
+  margin: 0;
+}
+
+.backend-text h3 {
+  margin: 0;
+}
+
+.frontend-label, .backend-label {}
+
+.frontend-level, .backend-level {}
+
 
 /* .list-frontend-flex-container {}
 

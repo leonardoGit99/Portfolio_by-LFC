@@ -1,10 +1,9 @@
 import React from 'react';
-import arrowIcon from '../../assets/arrow.png';
 import aboutLeoPhoto from '../../assets/about-leo.jpg';
 import { RiseOutlined, BookOutlined } from '@ant-design/icons';
 import './aboutSectionStyles.css';
 
-function AboutSection({ handleArrowClick }) {
+function AboutSection({ handleArrowClick, arrowIcon }) {
 
   return (
     <section id="about">

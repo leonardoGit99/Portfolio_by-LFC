@@ -1,4 +1,5 @@
 import React from 'react';
+import arrowIcon from '../assets/arrow.png';
 import ProfileSection from '../components/ProfileSection/ProfileSection';
 import AboutSection from '../components/AboutSection/AboutSection';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
@@ -12,9 +13,9 @@ function Portfolio() {
   return (
     <>
       <ProfileSection />
-      <AboutSection handleArrowClick={handleArrowClick} />
-      <ExperienceSection handleArrowClick={handleArrowClick} />
-      <ProjectsSection handleArrowClick={handleArrowClick} />
+      <AboutSection handleArrowClick={handleArrowClick} arrowIcon={arrowIcon}/>
+      <ExperienceSection handleArrowClick={handleArrowClick} arrowIcon={arrowIcon}/>
+      <ProjectsSection handleArrowClick={handleArrowClick}  arrowIcon={arrowIcon}/>
     </>
   )
 }
