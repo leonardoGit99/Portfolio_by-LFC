@@ -1,0 +1,26 @@
+#projects {
+  position: relative;
+}
+
+.projects-main-text {
+  text-align: center;
+}
+
+.projects-p1 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.projects-title {
+  font-size: 2.9rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.card-list-item {
+  display: flex !important;
+  justify-content: space-around !important;
+}

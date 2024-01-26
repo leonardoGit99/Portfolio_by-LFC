@@ -1,0 +1,37 @@
+.project-card {
+  width: 370px !important;
+  border-radius: 2rem !important;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+
+.project-card_img {
+  border-radius: 3rem !important;
+  width: 370px;
+  height: 275px;
+  object-fit: cover;
+  padding: 1.5rem 1.5rem 0 1.5rem ;
+}
+
+.ant-card-body {
+  margin: 0 !important;
+}
+
+.project-title {
+  display: block;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+
+.ant-card-actions {
+  border-radius: 0 0 2rem 2rem !important;
+  background-color: rgb(245, 245, 245) !important;
+
+}
+
+.project-github-btn, .project-live-demo-btn {
+  border-radius: 2rem !important;
+}

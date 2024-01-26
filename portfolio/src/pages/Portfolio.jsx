@@ -4,6 +4,7 @@ import ProfileSection from '../components/ProfileSection/ProfileSection';
 import AboutSection from '../components/AboutSection/AboutSection';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
+import ContactSection from '../components/ContactSection/ContactSection';
 
 
 function Portfolio() {
@@ -16,6 +17,7 @@ function Portfolio() {
       <AboutSection handleArrowClick={handleArrowClick} arrowIcon={arrowIcon}/>
       <ExperienceSection handleArrowClick={handleArrowClick} arrowIcon={arrowIcon}/>
       <ProjectsSection handleArrowClick={handleArrowClick}  arrowIcon={arrowIcon}/>
+      <ContactSection />
     </>
   )
 }
