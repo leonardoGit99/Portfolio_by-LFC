@@ -21,7 +21,7 @@
   margin: 0;
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -34,7 +34,23 @@
   padding: 2rem;
 }
 
-.contact-info p{
+.contact-btn {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: larger !important;
+  padding: 1.5rem !important;
+}
+
+.contact-btn p {
   font-size: larger !important;
   color: #000 !important;
+}
+
+.email-icon_img {
+  height: 2.5rem;
+}
+
+.linkedin-icon_img {
+  height: 2rem;
 }

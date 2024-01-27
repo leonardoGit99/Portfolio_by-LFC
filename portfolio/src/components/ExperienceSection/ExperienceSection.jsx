@@ -9,18 +9,18 @@ import './experienceSectionStyles.css';
 function ExperienceSection({ handleArrowClick, arrowIcon }) {
   const frontendList = [
     { icon: <FontAwesomeIcon icon={faHtml5} />, label: 'HTML', level: 'Experienced' },
-    { icon: <FontAwesomeIcon icon={faCss3Alt} />, label: 'CSS', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faCss3Alt} />, label: 'CSS', level: 'Intermediate' },
     { icon: <FontAwesomeIcon icon={faJs} />, label: 'JavaScript', level: 'Experienced' },
     { icon: <FontAwesomeIcon icon={faReact} />, label: 'ReactJs', level: 'Experienced' },
     { icon: <AntDesignOutlined />, label: 'Ant Design', level: 'Experienced' },
-    { icon: <FontAwesomeIcon icon={faBootstrap} />, label: 'Bootstrap', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faBootstrap} />, label: 'Bootstrap', level: 'Intermediate' },
   ]
 
   const backendList = [
-    { icon: <FontAwesomeIcon icon={faNode} />, label: 'NodeJs', level: 'Experienced' },
-    { icon: <FontAwesomeIcon icon={faJava} />, label: 'Java', level: 'Experienced' },
-    { icon: <FontAwesomeIcon icon={faDatabase} />, label: 'PostgreSQL', level: 'Experienced' },
-    { icon: <FontAwesomeIcon icon={faPhp} />, label: 'PHP', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faNode} />, label: 'NodeJs', level: 'Intermediate' },
+    { icon: <FontAwesomeIcon icon={faJava} />, label: 'Java', level: 'Intermediate' },
+    { icon: <FontAwesomeIcon icon={faDatabase} />, label: 'PostgreSQL', level: 'Intermediate' },
+    { icon: <FontAwesomeIcon icon={faPhp} />, label: 'PHP', level: "Basic" },
     { icon: <FontAwesomeIcon icon={faGitAlt} />, label: 'Git', level: 'Experienced' },
   ]
 
@@ -60,7 +60,7 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
                         <h3>{item.label}</h3>
                       </div>
                       <div className='frontend-level'>
-                        <p>{item.level}</p>
+                        <p>{item.level} </p>
                       </div>
                     </div>
                   </div>
