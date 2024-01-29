@@ -29,8 +29,8 @@ function ProfileSection() {
           <Image
             src={ProfilePhoto}
             className='img'
-            height={400}
-            width={400}
+            // height={400}
+            // width={400}
           >
             {/* <Avatar src={ProfilePhoto} size={{ xs: 400, sm: 400, md: 400, lg: 400, xl: 400, xxl: 400 }} /> */}
           </Image>

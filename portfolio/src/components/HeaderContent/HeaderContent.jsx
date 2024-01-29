@@ -21,7 +21,6 @@ function HeaderContent({ visible, showDrawer, closeDrawer, items, selectedTab, s
       <div className="logo">
         Leonardo Fuentes C.
       </div>
-      <div>
         {!isMobile ?
           <NavDesktop
             items={items}
@@ -37,7 +36,6 @@ function HeaderContent({ visible, showDrawer, closeDrawer, items, selectedTab, s
             setSelectedTab={setSelectedTab}
           />
         }
-      </div>
     </div>
   );
 }
