@@ -99,8 +99,7 @@
 
 @media (320px <=width <=480px) {
   #profile {
-    height: 60vh;
-    margin-bottom: 4rem;
+    height: 70vh;
   }
 
   .section-profile_flex-container {
@@ -123,9 +122,9 @@
   }
 }
 
-@media (480px <=width <=576px) {}
+/* @media (480px <=width <=576px) {}
 
-@media (576px <=width <=768px) {}
+@media (576px <=width <=768px) {} */
 
 /* @media (768px <= width <=1024px) {}
 

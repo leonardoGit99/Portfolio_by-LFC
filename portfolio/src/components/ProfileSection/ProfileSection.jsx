@@ -42,6 +42,7 @@ function ProfileSection() {
           <p className='section-profile_info-container__p2'>Frontend Developer</p>
           <div className='section-profile_info-container_btns'>
             <Button
+              size='large'
               type='default'
               className='section-profile_info-container__btn-1'
               onClick={() => handleBtnClick("downloadCV")}
@@ -49,6 +50,7 @@ function ProfileSection() {
               Download CV
             </Button>
             <Button
+              size='large'
               type='primary'
               className='section-profile_info-container__btn-2'
               onClick={() => handleBtnClick("contactInfo")}

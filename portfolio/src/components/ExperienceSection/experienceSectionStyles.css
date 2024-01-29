@@ -80,6 +80,7 @@
   margin: 0;
 }
 
+
 /* .frontend-label,
 .backend-label {}
 
@@ -90,3 +91,24 @@
 /* .list-frontend-flex-container {}
 
 .backend-experience_list {} */
+
+@media (320px <=width <=480px) {
+  #experience {
+    margin-top: 20rem;
+  }
+  
+  .experience-containers {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* @media (480px <=width <=576px) {}
+
+@media (576px <=width <=768px) {} */
+
+/* @media (768px <= width <=1024px) {}
+
+@media (1024px <= width <=1200px) {}
+
+@media (1200px <= width <=1440px) {} */

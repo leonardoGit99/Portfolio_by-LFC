@@ -16,3 +16,20 @@
 .footer-p1{
   font-size: 1rem;
 }
+
+@media (320px <=width <=480px) {
+  .nav-footer {
+    width: 380px !important;
+    font-size: 1rem;
+  }
+}
+
+/* @media (480px <=width <=576px) {}
+
+@media (576px <=width <=768px) {} */
+
+/* @media (768px <= width <=1024px) {}
+
+@media (1024px <= width <=1200px) {}
+
+@media (1200px <= width <=1440px) {} */
