@@ -116,15 +116,38 @@
   .title {
     font-size: 1.7rem;
   }
-  
+
   .section-profile_info-container__p2 {
     font-size: 1.3rem;
   }
 }
 
-/* @media (480px <=width <=576px) {}
+@media (480px <=width <=576px) {
+  #profile {
+    height: 70vh;
+  }
 
-@media (576px <=width <=768px) {} */
+  .section-profile_flex-container {
+    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-profile_photo-container {
+    width: 46vw;
+    height: 46vw;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .section-profile_info-container__p2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* @media (576px <=width <=768px) {}  */
 
 /* @media (768px <= width <=1024px) {}
 

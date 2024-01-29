@@ -116,7 +116,37 @@
   }
 }
 
-@media (480px <=width <=576px) {}
+@media (480px <=width <=576px) {
+  #about {
+    margin-top: 7rem;
+  }
+  .about-section-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img-container {
+    height: 46vh;
+    width: 46vw;
+  }
+  .about-img {
+    width: 100%;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .title__about {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .about-section-flex-container {
+    gap: 0rem;
+  }
+}
 
 @media (576px <=width <=768px) {}
 

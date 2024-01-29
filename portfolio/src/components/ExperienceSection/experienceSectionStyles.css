@@ -51,7 +51,7 @@
 
 .frontend-list-item-flex-container,
 .backend-list-item-flex-container {
-  display: flex !important; 
+  display: flex !important;
   justify-content: center !important;
 }
 
@@ -96,16 +96,25 @@
   #experience {
     margin-top: 20rem;
   }
-  
+
   .experience-containers {
     display: flex;
     flex-direction: column;
   }
 }
 
-/* @media (480px <=width <=576px) {}
+@media (480px <=width <=576px) {
+  #experience {
+    margin-top: 20rem;
+  }
 
-@media (576px <=width <=768px) {} */
+  .experience-containers {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* @media (576px <=width <=768px) {}  */
 
 /* @media (768px <= width <=1024px) {}
 

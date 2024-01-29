@@ -36,9 +36,13 @@
   }
 }
 
-/* @media (480px <=width <=576px) {}
+ @media (480px <=width <=576px) {
+  .burger-icon {
+    font-size: 1.8rem !important;
+  }
+ }
 
-@media (576px <=width <=768px) {} */
+/* @media (576px <=width <=768px) {}  */
 
 /* @media (768px <= width <=1024px) {}
 
