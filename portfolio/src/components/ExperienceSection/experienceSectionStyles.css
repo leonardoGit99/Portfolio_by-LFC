@@ -100,24 +100,44 @@
   .experience-containers {
     display: flex;
     flex-direction: column;
+    margin-top: 0rem;
   }
 }
 
 @media (480px <=width <=576px) {
   #experience {
-    margin-top: 20rem;
+    margin-top: 17rem;
   }
 
   .experience-containers {
     display: flex;
     flex-direction: column;
+    margin-top: 0rem;
   }
 }
 
-/* @media (576px <=width <=768px) {}  */
+@media (576px <=width <=768px) {
+  #experience {
+    margin-top: 15rem;
+  }
 
-/* @media (768px <= width <=1024px) {}
+  .experience-containers {
+    display: flex;
+    margin-top: 0rem;
+  }
+}
 
-@media (1024px <= width <=1200px) {}
+@media (768px <=width <=1024px) {
+  #experience {
+    margin-top: 10rem;
+  }
 
-@media (1200px <= width <=1440px) {} */
+  .experience-containers {
+    display: flex;
+    margin-top: 0rem;
+  }
+}
+
+/* @media (1024px <= width <=1200px) {}
+
+@media (1200px <= width <=1440px) {}  */

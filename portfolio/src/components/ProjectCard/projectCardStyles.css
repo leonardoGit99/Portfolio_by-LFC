@@ -12,7 +12,7 @@
   width: 370px;
   height: 275px;
   object-fit: cover;
-  padding: 1.5rem 1.5rem 0 1.5rem ;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .ant-card-body {
@@ -32,6 +32,31 @@
 
 }
 
-.project-github-btn, .project-live-demo-btn {
+.project-github-btn,
+.project-live-demo-btn {
   border-radius: 2rem !important;
 }
+
+@media (320px <=width <=480px) {
+  .project-card {
+    width: 300px !important;
+  }
+
+  .project-card_img {
+    border-radius: 3rem !important;
+    width: 300px;
+    height: 275px;
+    object-fit: cover;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+}
+
+/* @media (480px <=width <=576px) {}
+
+@media (576px <=width <=768px) {} */
+
+/* @media (768px <= width <=1024px) {}
+
+@media (1024px <= width <=1200px) {}
+
+@media (1200px <= width <=1440px) {} */

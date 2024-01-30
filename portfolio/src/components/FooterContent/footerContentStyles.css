@@ -19,19 +19,24 @@
 
 @media (320px <=width <=480px) {
   .nav-footer {
-    width: 380px !important;
+    width: 320px !important;
     font-size: 1rem;
   }
 }
 
 @media (480px <=width <=576px) {
   .nav-footer {
-    width: 380px !important;
+    width: 430px !important;
     font-size: 1rem;
   }
 }
 
-/* @media (576px <=width <=768px) {}  */
+ @media (576px <=width <=768px) {
+  .nav-footer {
+    width: 490px !important;
+    font-size: 1.2rem;
+  }
+ }  
 
 /* @media (768px <= width <=1024px) {}
 

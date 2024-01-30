@@ -59,6 +59,7 @@
   #contact {
     margin-top: 30rem;
   }
+
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -74,6 +75,7 @@
   #contact {
     margin-top: 30rem;
   }
+
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -85,10 +87,39 @@
   }
 }
 
-/* @media (576px <=width <=768px) {}  */
+@media (576px <=width <=768px) {
+  #contact {
+    margin-top: 32rem;
+  }
 
-/* @media (768px <= width <=1024px) {}
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    font-size: medium;
+    margin: 2rem 0;
+    padding: 0.5rem;
+  }
+}
 
-@media (1024px <= width <=1200px) {}
 
-@media (1200px <= width <=1440px) {}
+@media (768px <=width <=1024px) {
+  #contact {
+    margin-top: 34rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    font-size: medium;
+    margin: 2rem 0;
+    padding: 0.5rem;
+  }
+}
+
+/* @media (1024px <= width <=1200px) {}
+
+@media (1200px <= width <=1440px) {} */
