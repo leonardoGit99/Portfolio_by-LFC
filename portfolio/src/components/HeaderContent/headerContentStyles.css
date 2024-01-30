@@ -13,15 +13,11 @@
 @media (320px <=width <=480px) {
   .logo {
     font-size: 1.5rem;
-    /* width: 42%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
   }
 
-  .header-container {
+  /* .header-container {
     justify-content: space-between;
-  }
+  } */
 }
 
 @media (480px <=width <=576px) {
