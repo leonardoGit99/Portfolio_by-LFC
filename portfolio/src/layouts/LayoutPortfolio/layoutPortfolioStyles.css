@@ -1,11 +1,8 @@
-.app-layout {
-  display: block !important;
+/* .app-layout {
   min-height: 100vh !important;
-  /* background-color: crimson; */
-}
+} */
 
-.app-header {
-  display: block !important;
+.ant-layout .ant-layout-header {
   height: 17vh !important;
-  background-color: #f5f5f5 !important;
+  background: #F5F5F5 !important;
 }

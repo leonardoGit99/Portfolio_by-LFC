@@ -35,11 +35,11 @@ p {
   }
  }
 
-@media (1024px <= width <=1200px) {
+/* @media (1024px <= width <=1200px) {
   section {
     margin: 0 5% ;
   }
-}
+} */
 
 /* @media (1200px <= width <=1440px) {}  */
 
