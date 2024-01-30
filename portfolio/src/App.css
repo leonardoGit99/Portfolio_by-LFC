@@ -17,9 +17,17 @@ p {
   }
 }
 
-/* @media (480px <=width <=576px) {}
+ @media (480px <=width <=576px) {
+  section {
+    margin: 0 5% ;
+  }
+ }
 
-@media (576px <=width <=768px) {} */
+ @media (576px <=width <=768px) {
+  section {
+    margin: 0 5% ;
+  }
+ }  
 
 /* @media (768px <= width <=1024px) {}
 
