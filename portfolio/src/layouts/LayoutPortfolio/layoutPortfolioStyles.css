@@ -1,8 +1,11 @@
-.layout-container {
+.app-layout {
+  display: block !important;
   min-height: 100vh !important;
+  /* background-color: crimson; */
 }
 
-.layout-container .layout_header-container {
+.app-header {
+  display: block !important;
   height: 17vh !important;
   background-color: #f5f5f5 !important;
 }

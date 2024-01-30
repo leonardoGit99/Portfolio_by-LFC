@@ -65,8 +65,8 @@ function LayoutPortfolio() {
     localStorage.setItem("selectedTab", selectedTab);
   }, [selectedTab]);
   return (
-    <Layout className="layout-container">
-      <Header className="layout_header-container">
+    <Layout className="app-layout">
+      <Header className="app-header">
         <HeaderContent
           visible={visible}
           showDrawer={showDrawer}
