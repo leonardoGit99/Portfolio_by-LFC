@@ -6,3 +6,21 @@
   height: 17vh !important;
   background: #F5F5F5 !important;
 }
+
+
+
+/* Header fijo */
+/* @media (320px <=width <=1200px) {
+  .ant-layout .ant-layout-header {
+    height: 17vh !important;
+    background: #F5F5F5 !important;
+    position:fixed !important;
+    z-index: 1000 !important;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .ant-layout .ant-layout-content {
+    margin-top: 17vh !important;
+  }
+} */

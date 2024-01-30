@@ -5,8 +5,13 @@ import './navMobileStyles.css';
 
 function NavMobile({ visible, showDrawer, closeDrawer, items, selectedTab, setSelectedTab }) {
   const burgerButton = [
-    { key: "burguerButton", icon: !visible ? <MenuOutlined className='burger-icon' onClick={showDrawer}/> : null },
+    { key: "burguerButton", icon: !visible ? <MenuOutlined className='burger-icon' onClick={showDrawer} /> : null },
   ]
+
+  const handleMenuClick = (e) => {
+    setSelectedTab(e.key);
+    closeDrawer();
+  }
   return (
     <>
       <div className="mobile-menu-icon">
@@ -16,7 +21,7 @@ function NavMobile({ visible, showDrawer, closeDrawer, items, selectedTab, setSe
           </span>
         ))}
       </div>
-      
+
       <Drawer
         className='drawer'
         title="Portfolio LFC"
@@ -30,7 +35,7 @@ function NavMobile({ visible, showDrawer, closeDrawer, items, selectedTab, setSe
           className='nav-mobile'
           items={items}
           mode='vertical'
-          onClick={(e) => setSelectedTab(e.key)}
+          onClick={(e) => handleMenuClick(e)}
           defaultSelectedKeys={[selectedTab]}
         >
         </Menu>
