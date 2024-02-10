@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutLeoPhoto from '../../assets/about-leo.jpg';
+import aboutLeoPhoto from '../../assets/about-me-photo.jpg';
 import { RiseOutlined, BookOutlined } from '@ant-design/icons';
 import './aboutSectionStyles.css';
 
@@ -33,7 +33,7 @@ function AboutSection({ handleArrowClick, arrowIcon }) {
               <BookOutlined className='education-icon' />
               <h3 className='education_title'>Education</h3>
               <p> Bachelor of Humanities <br /> La Salle College</p>
-              <p> Student of Engineering. of systems <br /> U.M.S.S </p>
+              <p> Student of Engineering of systems <br /> U.M.S.S </p>
             </div>
           </div>
           <div className='about_p2'>
