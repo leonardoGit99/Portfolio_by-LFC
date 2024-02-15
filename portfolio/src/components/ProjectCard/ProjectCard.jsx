@@ -1,8 +1,17 @@
 import React from 'react';
-import { Button, Card, Tooltip } from 'antd';
+import { Button, Card, Modal, Tooltip, message } from 'antd';
+import { UserOutlined, KeyOutlined, CopyOutlined } from '@ant-design/icons';
 import './projectCardStyles.css';
 
 function ProjectCard({ title, img, githubLink, liveDemoLink }) {
+
+  const credentials = {
+    bettystore: {
+      admin: ["betty2023admin", "AdminBetty1#"],
+      seller: ["daril2023vendedor", "VendDaril2&/"]
+    }
+  }
+
   const handleGithubClick = (project) => {
     if (project == "BettyStore") {
       window.open(githubLink);
@@ -13,11 +22,52 @@ function ProjectCard({ title, img, githubLink, liveDemoLink }) {
 
   const handleLiveDemoClick = (project) => {
     if (project == "BettyStore") {
-      window.open(liveDemoLink);
+      Modal.confirm({
+        title: 'BettyStore access credentials',
+        content: (
+          <div className='modal-credentials-content'>
+            <div className='credentials-container'>
+              <div>
+                <p><span className='credentials'><UserOutlined /> Administrator: </span> betty2023admin</p>
+                <p><span className='credentials'><KeyOutlined /> Pass: </span>AdminBetty1#</p>
+              </div>
+              <Button size='small' onClick={() => copyToClipboard(credentials.bettystore.admin[0], credentials.bettystore.admin[1])}><CopyOutlined /></Button>
+            </div>
+            <div className='credentials-container'>
+              <div>
+                <p><span className='credentials'><UserOutlined /> Seller: </span> daril2023vendedor</p>
+                <p><span className='credentials'><KeyOutlined /> Pass: </span> VendDaril2&/</p>
+              </div>
+              <Button size='small' onClick={() => copyToClipboard(credentials.bettystore.seller[0], credentials.bettystore.seller[1])}><CopyOutlined /></Button>
+            </div>
+          </div>
+        ),
+        onOk() {
+          window.open(liveDemoLink);
+        },
+      });
     } else if (project == "EzRental") {
-      window.open(liveDemoLink);
+      Modal.confirm({
+        title: "EzRental access credentials",
+        content: "Create your account or sign in with Google",
+        onOk() {
+          window.open(liveDemoLink);
+        },
+      });
     }
   }
+
+  const copyToClipboard = (username, password) => {
+    const credentials = `User: ${username}\nPass: ${password}`;
+    navigator.clipboard.writeText(credentials)
+      .then(() => {
+        message.info("Credentials copied to clipboard", 1);
+      })
+      .catch(err => {
+        message.error("Error copying credentials, try again", 1);
+      });
+  }
+
   return (
     <>
       <Card

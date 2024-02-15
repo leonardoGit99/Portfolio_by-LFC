@@ -7,6 +7,7 @@
   text-align: center;
 }
 
+
 .project-card_img {
   border-radius: 3rem !important;
   width: 370px;
@@ -36,6 +37,23 @@
 .project-live-demo-btn {
   border-radius: 2rem !important;
 }
+
+.modal-credentials-content{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.credentials-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credentials {
+  font-weight: 600;
+}
+
 
 @media (320px <=width <=480px) {
   .project-card {
