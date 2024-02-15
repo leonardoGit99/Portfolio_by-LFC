@@ -29,7 +29,7 @@ function NavMobile({ visible, showDrawer, closeDrawer, items, selectedTab, setSe
         closable={true}
         onClose={closeDrawer}
         open={visible}
-        width={200}
+        width={"60%"}
       >
         <Menu
           className='nav-mobile'
