@@ -1,17 +1,18 @@
 #profile {
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 83vh;
 }
 
 .section-profile_photo-container {
   display: flex;
-  height: 400px;
+  height: auto;
   width: 400px;
   margin: auto 0;
 }
 
 .img {
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -109,8 +110,7 @@
   }
 
   .section-profile_photo-container {
-    width: 46vw;
-    height: 46vw;
+    width: 56vw;
   }
 
   .title {
@@ -134,8 +134,7 @@
   }
 
   .section-profile_photo-container {
-    width: 41vw;
-    height: 41vw;
+    width: 46vw;
   }
 
   .title {
@@ -160,7 +159,6 @@
 
   .section-profile_photo-container {
     width: 40vw;
-    height: 40vw;
   }
 
   .title {
@@ -185,7 +183,6 @@
 
   .section-profile_photo-container {
     width: 42vw;
-    height: 42vw;
   }
 
   .title {

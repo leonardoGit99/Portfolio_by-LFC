@@ -25,15 +25,15 @@ function AboutSection({ handleArrowClick, arrowIcon }) {
             <div className='experience-container'>
               <RiseOutlined className='experience-icon' />
               <h3 className='experience_title'>Experience</h3>
-              <p>1+ years <br /> Frontend Development</p>
-              <p>1+ years <br /> Java Development</p>
-              <p>6 months <br /> QA</p>
+              <p><span className='experience__bold'>1+ years</span> <br /> Frontend Development</p>
+              <p><span className='experience__bold'>1+ years </span><br /> Java Development</p>
+              <p><span className='experience__bold'>6 months</span> <br /> QA</p>
             </div>
             <div className='education-container'>
               <BookOutlined className='education-icon' />
               <h3 className='education_title'>Education</h3>
-              <p> Bachelor of Humanities <br /> La Salle College</p>
-              <p> Student of Engineering of systems <br /> U.M.S.S </p>
+              <p><span className='experience__bold'>Bachelor of Humanities</span><br /> La Salle College</p>
+              <p><span className='experience__bold'>Student of Engineering of systems</span><br /> U.M.S.S </p>
             </div>
           </div>
           <div className='about_p2'>

@@ -9,11 +9,7 @@ import ContactSection from '../components/ContactSection/ContactSection';
 
 function Portfolio() {
   const handleArrowClick = (sectionId) => {
-    window.history.pushState(null, '', `/#${sectionId}`);
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href=`/#${sectionId}`
   }
   return (
     <>
