@@ -38,8 +38,14 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  font-size: larger !important;
+  font-size: large !important;
+  gap: 0.8rem;
   padding: 1.5rem !important;
+  transition: transform 0.3s ease !important;
+}
+
+.contact-btn:hover {
+  transform: translateY(7px) !important;
 }
 
 .contact-btn p {
@@ -69,6 +75,9 @@
     margin: 2rem 0;
     padding: 0.5rem;
   }
+  .contact-btn {
+    font-size: small !important;
+  }
 }
 
 @media (480px <=width <=576px) {
@@ -84,6 +93,9 @@
     font-size: medium;
     margin: 2rem 0;
     padding: 0.5rem;
+  }
+  .contact-btn {
+    font-size: large !important;
   }
 }
 

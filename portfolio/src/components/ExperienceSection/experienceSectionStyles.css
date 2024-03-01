@@ -53,18 +53,24 @@
 .frontend-list-item-flex-container,
 .backend-list-item-flex-container {
   display: flex !important;
+  width: 100%;
   justify-content: center !important;
 }
 
 .frontend-list-item,
 .backend-list-item {
   display: flex;
-  gap: 2rem;
+  width: 70%;
+  gap: 1.2rem;
 }
 
 .frontend-icon,
 .backend-icon {
   font-size: 1.3rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 .frontend-text,

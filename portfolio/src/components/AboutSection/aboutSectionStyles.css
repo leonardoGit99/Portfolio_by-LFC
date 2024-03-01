@@ -70,7 +70,7 @@
 }
 
 .experience__bold {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .about_p2 {
@@ -84,10 +84,11 @@
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  transition: transform 0.3s ease;
 }
 
 .arrow-icon:hover {
-  height: 2.2rem;
+  transform: translateY(6px);
 }
 
 @media (320px <=width <=480px) {

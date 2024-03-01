@@ -32,21 +32,34 @@
 
 @media (320px <=width <=480px) {
   .burger-icon {
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
   }
   
 }
 
  @media (480px <=width <=576px) {
   .burger-icon {
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
   }
  }
 
-/* @media (576px <=width <=768px) {}  */
+ @media (576px <=width <=768px) {
+  .burger-icon {
+    font-size: 1.6rem !important;
+  }
+ }  
 
-/* @media (768px <= width <=1024px) {}
+ @media (768px <= width <=1024px) {
+  .burger-icon {
+    font-size: 1.7rem !important;
+  }
+ }
 
-@media (1024px <= width <=1200px) {}
+@media (1024px <= width <=1200px) {
+  .burger-icon {
+    font-size: 1.8rem !important;
+  }
+}
 
-@media (1200px <= width <=1440px) {} */
+/*@media (1200px <= width <=1440px) {
+} */

@@ -7,7 +7,7 @@ import './contactSectionStyles.css';
 function ContactSection() {
   const handleContactClick = (contactType) => {
     if (contactType == "email") {
-      window.open('mailto:leit199966@gmail.com')
+      window.open('mailto:leonardofuentesclaros.com')
     } else {
       window.open('https://www.linkedin.com/in/leonardo-fuentes-claros-4a425b186/');
     }
@@ -27,7 +27,7 @@ function ContactSection() {
             onClick={() => handleContactClick("email")}
           >
             <img src={emailIcon} alt="email icon" className='email-icon_img' />
-            <p>leit199966@gmail.com</p>
+            <p>leonardofuentesclaros@gmail.com</p>
           </Button>
         </div>
         <div className='linkedin-container'>
