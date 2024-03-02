@@ -14,6 +14,7 @@
 .img {
   width: 100%;
   border-radius: 50%;
+  filter: drop-shadow(0 2px 3px rgb(85, 85, 85));
 }
 
 .section-profile_photo-container .ant-image-mask {
