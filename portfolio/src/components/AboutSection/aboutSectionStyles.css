@@ -1,6 +1,5 @@
 #about {
   position: relative;
-  height: 100vh;
 }
 
 .about-section-flex-container {
@@ -17,6 +16,7 @@
 
 .about-main-text {
   text-align: center;
+  display: block;
 }
 
 
@@ -79,16 +79,33 @@
 }
 
 .arrow-icon {
-  cursor: pointer;
   height: 2rem;
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
-  transition: transform 0.3s ease;
+  /*transition: transform 0.3s ease;*/
+  animation: moveArrowBtn 1.3s 2s infinite ease-in-out alternate;
 }
 
 .arrow-icon:hover {
-  transform: translateY(6px);
+  cursor: pointer;
+  filter: drop-shadow(0px 2px 2px rgb(85, 85, 85));
+  scale: 1.1;
+}
+
+
+
+@keyframes moveArrowBtn {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(10px);
+    opacity: 0.8;
+    scale: 1.1;
+  }
 }
 
 @media (320px <=width <=480px) {

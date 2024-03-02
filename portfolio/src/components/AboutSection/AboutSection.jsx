@@ -54,14 +54,13 @@ function AboutSection({ handleArrowClick, arrowIcon }) {
             </p>
           </div>
         </div>
-        <img
+      </div>
+      <img
           className='arrow-icon'
           src={arrowIcon}
           alt='arrow icon'
           onClick={() => handleArrowClick("experience")}
-        />
-      </div>
-
+      />
     </section>
   )
 }

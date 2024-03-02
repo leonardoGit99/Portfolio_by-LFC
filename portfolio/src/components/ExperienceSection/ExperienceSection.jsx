@@ -109,13 +109,13 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
             </div>
           </div>
         </div>
-        <img
+      </div>
+      <img
           className='arrow-icon'
           src={arrowIcon}
           alt='arrow icon'
           onClick={() => handleArrowClick("projects")}
-        />
-      </div>
+      />
     </section>
   )
 }
