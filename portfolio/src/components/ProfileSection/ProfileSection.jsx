@@ -1,6 +1,6 @@
 import React from 'react';
 import { Avatar, Button, Image } from 'antd';
-import ProfilePhoto from '../../assets/leonardo-fuentes-claros.png';
+import ProfilePhoto from '../../assets/leonardo-fuentes-claros.webp';
 import githubIcon from '../../assets/github.png';
 import linkedinIcon from '../../assets/linkedin.png';
 import leonardoFuentesClarosCV from '../../assets/Leonardo-Fuentes-Claros.pdf'

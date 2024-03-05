@@ -1,8 +1,8 @@
 import React from 'react';
 import { List } from 'antd';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import bettyStoreProjectImg from '../../assets/bettyStore.jpg';
-import ezRentalProjectImg from '../../assets/ezRental.jpg';
+import bettyStoreProjectImg from '../../assets/bettyStore.webp';
+import ezRentalProjectImg from '../../assets/ezRental.webp';
 import './projectsSectionStyles.css';
 
 function ProjectsSection({handleArrowClick, arrowIcon}) {

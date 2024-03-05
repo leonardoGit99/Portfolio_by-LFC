@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutLeoPhoto from '../../assets/about-me-photo.jpg';
+import aboutLeoPhoto from '../../assets/about-me-photo.webp';
 import { RiseOutlined, BookOutlined } from '@ant-design/icons';
 import './aboutSectionStyles.css';
 
