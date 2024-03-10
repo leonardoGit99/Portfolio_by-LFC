@@ -38,28 +38,22 @@ function AboutSection({ handleArrowClick, arrowIcon }) {
           </div>
           <div className='about_p2'>
             <p>
-              Student in the last semester of the degree
-              Systems Engineering, focused on
-              Web programming. With more
-              knowledge in front-end development.
-              My experience has developed
-              through academic projects and
-              personal, which has strengthened my
-              problem solving skills
-              and teamwork, even under
-              pressure. In addition, I have skills of
-              leadership and initiative that allow me
-              guide and motivate teams towards achievement
-              of common objectives.
+              Student in the last semester of the systems engineering degree,
+              focused on web programming. Interested in finding opportunities
+              where he can apply the experience he developed through academic
+              and personal projects. This experience has strengthened my skills
+              in problem solving and teamwork, even under pressure. I have a
+              sense of responsibility, initiative, ease of working in a team
+              and I actively seek to learn new technologies.
             </p>
           </div>
         </div>
       </div>
       <img
-          className='arrow-icon'
-          src={arrowIcon}
-          alt='arrow icon'
-          onClick={() => handleArrowClick("experience")}
+        className='arrow-icon'
+        src={arrowIcon}
+        alt='arrow icon'
+        onClick={() => handleArrowClick("experience")}
       />
     </section>
   )
