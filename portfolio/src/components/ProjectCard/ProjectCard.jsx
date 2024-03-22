@@ -17,6 +17,8 @@ function ProjectCard({ title, img, githubLink, liveDemoLink }) {
       window.open(githubLink);
     } else if (project == "EzRental") {
       window.open(githubLink);
+    } else if (project == "TaskFlow") {
+      window.open(githubLink);
     }
   }
 
@@ -50,6 +52,14 @@ function ProjectCard({ title, img, githubLink, liveDemoLink }) {
       Modal.confirm({
         title: "EzRental access credentials",
         content: "Create your account or sign in with Google",
+        onOk() {
+          window.open(liveDemoLink);
+        },
+      });
+    } else if (project == "TaskFlow") {
+      Modal.confirm({
+        title: <>P.E.R.N stack <span className='subtitle-task-flow-modal'>(PostgreSQL || Express || React || NodeJs)</span></>,
+        content: "TaskFlow is a task management platform designed to simplify daily life. With an intuitive and efficient interface, you can create, read, update and delete tasks with ease.",
         onOk() {
           window.open(liveDemoLink);
         },

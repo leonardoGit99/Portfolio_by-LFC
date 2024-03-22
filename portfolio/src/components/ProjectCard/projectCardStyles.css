@@ -54,6 +54,9 @@
   font-weight: 600;
 }
 
+.subtitle-task-flow-modal {
+  display: block;
+}
 
 @media (320px <=width <=480px) {
   .project-card {

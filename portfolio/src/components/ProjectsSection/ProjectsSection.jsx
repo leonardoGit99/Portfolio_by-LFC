@@ -3,21 +3,27 @@ import { List } from 'antd';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import bettyStoreProjectImg from '../../assets/bettyStore.webp';
 import ezRentalProjectImg from '../../assets/ezRental.webp';
+import taskFlow from '../../assets/taskFlow.webp';
 import './projectsSectionStyles.css';
 
 function ProjectsSection({handleArrowClick, arrowIcon}) {
   const projects = [
     {
-      title: "BettyStore",
-      img: bettyStoreProjectImg,
-      githubLink: "https://github.com/leonardoGit99/BettyStore",
-      liveDemoLink: "https://truebettystore.000webhostapp.com/"
+      title: "TaskFlow",
+      img: taskFlow,
+      githubLink: "https://github.com/leonardoGit99/pern-stack_server",
+      liveDemoLink: "https://pern-stack-by-lfc.vercel.app/"
     }, {
       title: "EzRental",
       img: ezRentalProjectImg,
       githubLink: "https://github.com/leonardoGit99/EzRental",
       liveDemoLink: "https://ez-rental-kinsta-front.vercel.app/"
-    }
+    }, {
+      title: "BettyStore",
+      img: bettyStoreProjectImg,
+      githubLink: "https://github.com/leonardoGit99/BettyStore",
+      liveDemoLink: "https://truebettystore.000webhostapp.com/"
+    },
   ]
   return (
     <section id="projects">

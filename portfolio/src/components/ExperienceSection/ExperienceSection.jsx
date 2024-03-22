@@ -17,9 +17,10 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
   ]
 
   const backendList = [
-    { icon: <FontAwesomeIcon icon={faNode} />, label: 'NodeJs', level: 'Intermediate' },
-    { icon: <FontAwesomeIcon icon={faJava} />, label: 'Java', level: 'Intermediate' },
+    { icon: <FontAwesomeIcon icon={faNode} />, label: 'NodeJs', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faNode} />, label: 'Express', level: 'Intermediate' },
     { icon: <FontAwesomeIcon icon={faDatabase} />, label: 'PostgreSQL', level: 'Intermediate' },
+    { icon: <FontAwesomeIcon icon={faJava} />, label: 'Java', level: 'Intermediate' },
     { icon: <FontAwesomeIcon icon={faPhp} />, label: 'PHP', level: "Basic" },
     { icon: <FontAwesomeIcon icon={faGitAlt} />, label: 'Git', level: 'Experienced' },
   ]
