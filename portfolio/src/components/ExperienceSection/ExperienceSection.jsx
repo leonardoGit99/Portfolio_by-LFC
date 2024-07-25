@@ -21,7 +21,7 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
     { icon: <FontAwesomeIcon icon={faNode} />, label: 'Express', level: 'Intermediate' },
     { icon: <FontAwesomeIcon icon={faDatabase} />, label: 'PostgreSQL', level: 'Intermediate' },
     { icon: <FontAwesomeIcon icon={faJava} />, label: 'Java', level: 'Intermediate' },
-    { icon: <FontAwesomeIcon icon={faPhp} />, label: 'PHP', level: "Basic" },
+    { icon: <FontAwesomeIcon icon={faPhp} />, label: 'PHP', level: "Intermediate" },
     { icon: <FontAwesomeIcon icon={faGitAlt} />, label: 'Git', level: 'Experienced' },
   ]
 

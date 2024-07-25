@@ -25,8 +25,8 @@ function AboutSection({ handleArrowClick, arrowIcon }) {
             <div className='experience-container'>
               <RiseOutlined className='experience-icon' />
               <h3 className='experience_title'>Experience</h3>
-              <p><span className='experience__bold'>1+ years</span> <br /> Frontend Development</p>
-              <p><span className='experience__bold'>1+ years </span><br /> Java Development</p>
+              <p><span className='experience__bold'>2+ years</span> <br /> Frontend Development</p>
+              <p><span className='experience__bold'>1+ years </span><br /> Backend Development</p>
               <p><span className='experience__bold'>6 months</span> <br /> QA</p>
             </div>
             <div className='education-container'>
@@ -34,11 +34,12 @@ function AboutSection({ handleArrowClick, arrowIcon }) {
               <h3 className='education_title'>Education</h3>
               <p><span className='experience__bold'>Bachelor of Humanities</span><br /> La Salle College</p>
               <p><span className='experience__bold'>Student of Engineering of systems</span><br /> U.M.S.S </p>
+              <p><span className='experience__bold'>Student of intensive english course</span><br /> C.B.A </p>
             </div>
           </div>
           <div className='about_p2'>
             <p>
-              Student in the last semester of the systems engineering degree,
+              Student who has completed all coursework of the systems engineering degree,
               focused on web programming. Interested in finding opportunities
               where he can apply the experience he developed through academic
               and personal projects. This experience has strengthened my skills
