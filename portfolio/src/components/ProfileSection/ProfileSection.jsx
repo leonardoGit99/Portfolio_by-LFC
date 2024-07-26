@@ -3,7 +3,7 @@ import { Avatar, Button, Image } from 'antd';
 import ProfilePhoto from '../../assets/leonardo-fuentes-claros.webp';
 import githubIcon from '../../assets/github.png';
 import linkedinIcon from '../../assets/linkedin.png';
-import leonardoFuentesClarosCV from '../../assets/Leonardo Fuentes Claros_CV.pdf'
+import leonardoFuentesClarosCV from '../../assets/Leonardo-Fuentes-Claros_CV.pdf'
 import './profileSectionStyles.css';
 
 function ProfileSection() {

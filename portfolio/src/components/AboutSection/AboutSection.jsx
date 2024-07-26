@@ -39,13 +39,18 @@ function AboutSection({ handleArrowClick, arrowIcon }) {
           </div>
           <div className='about_p2'>
             <p>
-              Student who has completed all coursework of the systems engineering degree,
-              focused on web programming. Interested in finding opportunities
-              where he can apply the experience he developed through academic
-              and personal projects. This experience has strengthened my skills
-              in problem solving and teamwork, even under pressure. I have a
-              sense of responsibility, initiative, ease of working in a team
-              and I actively seek to learn new technologies.
+              I'm interested in finding opportunities
+              where I can apply the experience I have
+              developed through professional,
+              academic, and personal projects. This
+              experience has strengthened my
+              problem-solving skills and my ability to
+              work as part of a team, even under
+              pressure. I have a sense of responsibility,
+              initiative, and ease in working with
+              others, and I'm actively seeking to learn
+              new technologies.
+
             </p>
           </div>
         </div>
