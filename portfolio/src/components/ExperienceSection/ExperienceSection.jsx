@@ -10,7 +10,7 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
   const frontendList = [
     { icon: <FontAwesomeIcon icon={faHtml5} />, label: 'HTML', level: 'Experienced' },
     { icon: <FontAwesomeIcon icon={faCss3Alt} />, label: 'CSS', level: 'Intermediate' },
-    { icon: <FontAwesomeIcon icon={faJs} />, label: 'JavaScript', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faJs} />, label: 'TypeScript', level: 'Experienced' },
     { icon: <FontAwesomeIcon icon={faReact} />, label: 'ReactJs', level: 'Experienced' },
     { icon: <AntDesignOutlined />, label: 'Ant Design', level: 'Experienced' },
     { icon: <FontAwesomeIcon icon={faBootstrap} />, label: 'Bootstrap', level: 'Intermediate' },
