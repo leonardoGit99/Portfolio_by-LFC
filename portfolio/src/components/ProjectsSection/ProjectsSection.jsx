@@ -5,8 +5,9 @@ import bettyStoreProjectImg from '../../assets/bettyStore.webp';
 import ezRentalProjectImg from '../../assets/ezRental.webp';
 import taskFlow from '../../assets/taskFlow.webp';
 import './projectsSectionStyles.css';
+import '../../components/styles/globalStyles.css';
 
-function ProjectsSection({handleArrowClick, arrowIcon}) {
+function ProjectsSection({ handleArrowClick, arrowIcon, isDarkMode }) {
   const projects = [
     {
       title: "TaskFlow",
@@ -29,7 +30,7 @@ function ProjectsSection({handleArrowClick, arrowIcon}) {
     <section id="projects">
       <div className='projects-main-text'>
         <p className='projects-p1'>Browse My Recent</p>
-        <h1 className='projects-title'>Projects</h1>
+        <h1 className={isDarkMode ? 'section-title section-title__dark-mode' : 'section-title'}>Projects</h1>
       </div>
       <div className='projects-list-containers'>
         <List
@@ -52,6 +53,7 @@ function ProjectsSection({handleArrowClick, arrowIcon}) {
               className='card-list-item'
             >
               <ProjectCard
+                isDarkMode={isDarkMode}
                 title={project.title}
                 img={project.img}
                 githubLink={project.githubLink}
@@ -62,7 +64,7 @@ function ProjectsSection({handleArrowClick, arrowIcon}) {
         />
       </div>
       <img
-        className='arrow-icon'
+        className={isDarkMode? 'arrow-icon arrow-icon__dark-mode':'arrow-icon'}
         src={arrowIcon}
         alt='arrow icon'
         onClick={() => handleArrowClick("contact")}

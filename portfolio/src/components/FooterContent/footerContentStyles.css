@@ -1,16 +1,28 @@
 .footer-container {
   display: flex;
+  height: 100% !important;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2.2rem;
+  padding-top: 1.1rem;
+  padding-bottom: 2.2rem;
+  gap: 20px;
+  background: #F5F5F5 !important;
+  transition: background ease-in-out 0.6s;
+}
+
+.footer-container__dark-mode {
+  background: #000C17 !important;
+  transition: background ease-in-out 0.6s;
 }
 
 .nav-footer {
-  display: block;
   background: #F5F5F5;
-  width: 640px !important;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  transition: background ease-in-out 0.6s;
+}
+
+.nav-footer__dark-mode {
+  background: #000C17;
+  transition: background ease-in-out 0.6s;
 }
 
 .footer-p1{

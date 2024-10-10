@@ -1,0 +1,83 @@
+.section-title {
+  font-size: 2.9rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+  transition: color ease-in-out 0.6s !important;
+}
+
+.section-title__dark-mode {
+  color: #f9f9f9;
+  transition: color ease-in-out 0.6s !important;
+}
+
+.h3-title,
+.tag {
+  margin: 0 !important;
+  color: #000;
+  transition: color ease-in-out 0.6s !important;
+}
+
+.h3-title__dark-mode,
+.tag__dark-mode {
+  color: #f9f9f9ec !important;
+  transition: color ease-in-out 0.6s !important;
+}
+
+.icon__dark-mode {
+  color: #f9f9f9 !important;
+  transition: color ease-in-out 0.6s !important;
+}
+
+
+.arrow-icon {
+  height: 2rem;
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+  /*transition: transform 0.3s ease;*/
+  animation: moveArrowBtn 0.8s 2s infinite ease-in alternate;
+}
+
+.arrow-icon__dark-mode {
+  filter: grayscale(100%);
+  /* Cambia la imagen a escala de grises */
+  filter: invert(100%);
+  /* Invierte colores (negativo) */
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1000%) hue-rotate(180deg);
+  /* Para un cambio de color más preciso */
+}
+
+
+
+.arrow-icon:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 2px 2px rgb(85, 85, 85));
+  scale: 1.1;
+}
+
+.arrow-icon__dark-mode:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 2px 2px #a4c6f0);
+  scale: 1.1;
+}
+
+
+.btn-secondary__dark-mode {
+  background-color: #E0E0E0 !important;
+}
+
+
+@keyframes moveArrowBtn {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    scale: 1.1;
+  }
+
+  100% {
+    transform: translateY(14.5px);
+    opacity: .7;
+  }
+}
+

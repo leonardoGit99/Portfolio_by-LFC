@@ -4,11 +4,26 @@
   align-items: center;
   height: 100%;
   background: #F5F5F5;
+  transition: background  ease-in-out 0.6s;
+}
+
+.header-container__dark-mode {
+  background: #000C17 !important;
+  transition: background  ease-in-out 0.6s;
 }
 
 .logo {
   font-size: 2rem;
+  color: #000 !important; 
+  transition: color ease-in-out 0.6s;
 }
+
+.logo__dark-mode {
+  color: #f9f9f9 !important; 
+  transition: color ease-in-out 0.6s;
+}
+
+
 
 @media (320px <=width <=480px) {
   .logo {

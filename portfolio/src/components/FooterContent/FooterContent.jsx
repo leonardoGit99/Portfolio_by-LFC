@@ -2,18 +2,19 @@ import React from 'react';
 import { Menu } from 'antd';
 import './footerContentStyles.css';
 
-function FooterContent({ items, selectedTab, setSelectedTab }) {
+function FooterContent({ items, selectedTab, setSelectedTab, isDarkMode }) {
   return (
-    <div className="footer-container">
+    <div className={isDarkMode ? "footer-container footer-container__dark-mode" : "footer-container"}>
       <div className='nav-desktop-footer'>
-      <Menu
-        className='nav-footer'
-        items={items}
-        mode='horizontal'
-        onClick={(e) => setSelectedTab(e.key)}
-        defaultSelectedKeys={[selectedTab]}
-      >
-      </Menu>
+        <Menu
+          className={isDarkMode ? 'nav-footer nav-footer__dark-mode' : 'nav-footer'}
+          items={items}
+          theme='light'
+          mode='horizontal'
+          onClick={(e) => setSelectedTab(e.key)}
+          defaultSelectedKeys={[selectedTab]}
+        >
+        </Menu>
       </div>
       <p className='footer-p1'>Copyright &copy; {new Date().getFullYear()} Leonardo Fuentes C. All Rigths Reserved.</p>
     </div>

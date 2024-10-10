@@ -48,6 +48,13 @@
   font-size: 2.9rem;
   text-align: center;
   margin: 0;
+  color: #000;
+  transition: color ease-in-out 0.6s !important;
+}
+
+.title__dark-mode {
+  color: #f9f9f9;
+  transition: color ease-in-out 0.6s !important;
 }
 
 .section-profile_info-container__p2 {
@@ -92,6 +99,17 @@
   height: 2rem;
   border-radius: 50%;
   transition: transform 0.3s ease;
+}
+
+.linkedin_icon__dark-mode,
+.github_icon__dark-mode {
+  filter: grayscale(100%);
+  /* Cambia la imagen a escala de grises */
+  filter: invert(100%);
+  /* Invierte colores (negativo) */
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) brightness(75%);
+  /* Para un cambio de color más preciso */
+  transition: transform 0.3s ease, filter 0.6s ease-in-out !important;
 }
 
 .linkedin_icon:hover,
@@ -173,7 +191,7 @@
   }
 }
 
- @media (768px <= width <=1024px) {
+@media (768px <=width <=1024px) {
   #profile {
     height: 80vh;
   }
@@ -195,7 +213,7 @@
   .section-profile_info-container__p2 {
     font-size: 1.5rem;
   }
- }
+}
 
 /* @media (1024px <= width <=1200px) {} */
 

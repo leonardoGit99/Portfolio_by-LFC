@@ -6,7 +6,7 @@ import linkedinIcon from '../../assets/linkedin.png';
 import leonardoFuentesClarosCV from '../../assets/Leonardo Fuentes Claros_CV.pdf'
 import './profileSectionStyles.css';
 
-function ProfileSection() {
+function ProfileSection({ isDarkMode }) {
   const handleBtnClick = (btnType) => {
     if (btnType == "downloadCV") {
       window.open(leonardoFuentesClarosCV);
@@ -29,22 +29,22 @@ function ProfileSection() {
           <Image
             src={ProfilePhoto}
             className='img'
-            // height={400}
-            // width={400}
+          // height={400}
+          // width={400}
           >
             {/* <Avatar src={ProfilePhoto} size={{ xs: 400, sm: 400, md: 400, lg: 400, xl: 400, xxl: 400 }} /> */}
           </Image>
         </div>
         <div className='section-profile_info-container'>
           <p className='section-profile_info-container__p1'>Hello, I'm</p>
-          <h1 className='title'>Leonardo Fuentes </h1>
-          <h1 className='title'>Claros</h1>
+          <h1 className={isDarkMode ? 'title title__dark-mode' : 'title'}>Leonardo Fuentes </h1>
+          <h1 className={isDarkMode ? 'title title__dark-mode' : 'title'}>Claros</h1>
           <p className='section-profile_info-container__p2'>Software Developer</p>
           <div className='section-profile_info-container_btns'>
-            <Button 
+            <Button
               size='large'
               type='default'
-              className='section-profile_info-container__btn-1'
+              className={isDarkMode? 'section-profile_info-container__btn-1 btn-secondary__dark-mode':'section-profile_info-container__btn-1'}
               onClick={() => handleBtnClick("downloadCV")}
             >
               Download CV
@@ -60,13 +60,13 @@ function ProfileSection() {
           </div>
           <div className='section-profile_socials-container'>
             <img
-              className='linkedin_icon'
+              className={isDarkMode ? 'linkedin_icon linkedin_icon__dark-mode' : 'linkedin_icon'}
               src={linkedinIcon}
               alt="Linkedin icon"
               onClick={() => handleSocialClick("linkedin")}
             />
             <img
-              className='github_icon'
+              className={isDarkMode ? 'github_icon github_icon__dark-mode' : 'github_icon'}
               src={githubIcon}
               alt="Github icon"
               onClick={() => handleSocialClick("github")}

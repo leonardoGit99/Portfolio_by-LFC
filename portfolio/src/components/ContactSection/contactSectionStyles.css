@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 73vh;
+  height: 74vh;
 }
 
 .contact-main-text {
@@ -48,9 +48,13 @@
   transform: translateY(7px) !important;
 }
 
+.contact-btn__dark-mode:hover {
+  background-color: #00111F!important;
+}
+
 .contact-btn p {
   font-size: larger !important;
-  color: #000 !important;
+  color: #000;
 }
 
 .email-icon_img {
@@ -59,6 +63,16 @@
 
 .linkedin-icon_img {
   height: 2rem;
+}
+
+.email-icon_img__dark-mode,
+.linkedin-icon_img__dark-mode {
+  filter: grayscale(100%);
+  /* Cambia la imagen a escala de grises */
+  filter: invert(100%);
+  /* Invierte colores (negativo) */
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) brightness(75%);
+  /* Para un cambio de color más preciso */
 }
 
 @media (320px <=width <=480px) {
@@ -75,6 +89,7 @@
     margin: 2rem 0;
     padding: 0.5rem;
   }
+
   .contact-btn {
     font-size: small !important;
   }
@@ -94,6 +109,7 @@
     margin: 2rem 0;
     padding: 0.5rem;
   }
+
   .contact-btn {
     font-size: large !important;
   }

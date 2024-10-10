@@ -4,9 +4,9 @@ import { AntDesignOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faJs, faJava, faNode, faHtml5, faCss3Alt, faReact, faBootstrap, faPhp, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import '../../components/styles/globalStyles.css';
 import './experienceSectionStyles.css';
-
-function ExperienceSection({ handleArrowClick, arrowIcon }) {
+function ExperienceSection({ handleArrowClick, arrowIcon, isDarkMode }) {
   const frontendList = [
     { icon: <FontAwesomeIcon icon={faHtml5} />, label: 'HTML', level: 'Experienced' },
     { icon: <FontAwesomeIcon icon={faCss3Alt} />, label: 'CSS', level: 'Intermediate' },
@@ -30,7 +30,7 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
     <section id="experience">
       <div className='experience-main-text'>
         <p className='experience_p1'>Explore My</p>
-        <h1 className='title-experience'>Experience</h1>
+        <h1 className={isDarkMode ? 'section-title section-title__dark-mode' : 'section-title'}>Experience</h1>
       </div>
 
       <div className='experience-containers'>
@@ -53,11 +53,11 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
               renderItem={(item, index) => (
                 <List.Item key={index} className='frontend-list-item-flex-container'>
                   <div className='frontend-list-item'>
-                    <div className='frontend-icon'>
+                    <div className={isDarkMode ? 'frontend-icon icon__dark-mode' : 'frontend-icon'}>
                       {item.icon}
                     </div>
                     <div className='frontend-text'>
-                      <div className='frontend-label'>
+                      <div className={isDarkMode ? 'frontend-label tag__dark-mode' : 'frontend-label'}>
                         <h3>{item.label}</h3>
                       </div>
                       <div className='frontend-level'>
@@ -91,11 +91,11 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
                 renderItem={(item, index) => (
                   <List.Item key={index} className='backend-list-item-flex-container'>
                     <div className='backend-list-item'>
-                      <div className='backend-icon'>
+                      <div className={isDarkMode ? 'backend-icon icon__dark-mode' : 'backend-icon'}>
                         {item.icon}
                       </div>
                       <div className='backend-text'>
-                        <div className='backend-label'>
+                        <div className={isDarkMode ? 'backend-label tag__dark-mode' : 'backend-label'}>
                           <h3>{item.label}</h3>
                         </div>
                         <div className='backend-level'>
@@ -112,10 +112,10 @@ function ExperienceSection({ handleArrowClick, arrowIcon }) {
         </div>
       </div>
       <img
-          className='arrow-icon'
-          src={arrowIcon}
-          alt='arrow icon'
-          onClick={() => handleArrowClick("projects")}
+        className={isDarkMode? 'arrow-icon arrow-icon__dark-mode':'arrow-icon'}
+        src={arrowIcon}
+        alt='arrow icon'
+        onClick={() => handleArrowClick("projects")}
       />
     </section>
   )

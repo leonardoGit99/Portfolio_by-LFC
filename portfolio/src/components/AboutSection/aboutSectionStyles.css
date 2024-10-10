@@ -19,13 +19,6 @@
   display: block;
 }
 
-
-.title__about {
-  font-size: 2.9rem;
-  margin-top: 0;
-}
-
-
 .about-img-container {
   display: flex;
   height: auto;
@@ -66,9 +59,7 @@
   font-size: 1.5rem;
 }
 
-.experience_title, .education_title {
-  margin: 0;
-}
+
 
 .experience__bold {
   font-weight: 600;
@@ -79,35 +70,7 @@
   font-weight: 500 !important;
 }
 
-.arrow-icon {
-  height: 2rem;
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-  /*transition: transform 0.3s ease;*/
-  animation: moveArrowBtn 0.8s 2s infinite ease-in alternate;
-}
 
-.arrow-icon:hover {
-  cursor: pointer;
-  filter: drop-shadow(0px 2px 2px rgb(85, 85, 85));
-  scale: 1.1;
-}
-
-
-
-@keyframes moveArrowBtn {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-    scale: 1.1;
-  }
-
-  100% {
-    transform: translateY(14.5px);
-    opacity: .7;
-  }
-}
 
 @media (320px <=width <=480px) {
   #about {

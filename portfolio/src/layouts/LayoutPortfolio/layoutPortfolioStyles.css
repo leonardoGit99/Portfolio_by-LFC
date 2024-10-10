@@ -1,9 +1,26 @@
-/* .app-layout {
-  min-height: 100vh !important;
-} */
+.app-layout {
+  /* min-height: 100vh !important; */
+  background: #F5F5F5 !important;
+  transition: background ease-in-out 0.6s !important;
+}
 
 .ant-layout .ant-layout-header {
   height: 17vh !important;
+  background: #F5F5F5 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.app-layout__dark-mode {
+  /* min-height: 100vh !important; */
+  background: #000C17 !important;
+  transition: background ease-in-out 0.6s !important;
+}
+
+
+.ant-layout .ant-layout-footer { 
+  height: 25vh !important;
+  padding: 0 !important;
   background: #F5F5F5 !important;
 }
 

@@ -3,7 +3,7 @@ import { Button, Card, Modal, Tooltip, message } from 'antd';
 import { UserOutlined, KeyOutlined, CopyOutlined } from '@ant-design/icons';
 import './projectCardStyles.css';
 
-function ProjectCard({ title, img, githubLink, liveDemoLink }) {
+function ProjectCard({ title, img, githubLink, liveDemoLink, isDarkMode }) {
 
   const credentials = {
     bettystore: {
@@ -81,7 +81,7 @@ function ProjectCard({ title, img, githubLink, liveDemoLink }) {
   return (
     <>
       <Card
-        className='project-card'
+        className={isDarkMode?'project-card project-card__dark-mode':'project-card'}
         cover={
           <div>
             <img
@@ -94,7 +94,7 @@ function ProjectCard({ title, img, githubLink, liveDemoLink }) {
         actions={[
           <>
             <Tooltip title="Click to see the source code" placement='bottom'>
-              <Button type='default' size='large' className='project-github-btn' onClick={() => handleGithubClick(title)}>Github</Button>
+              <Button type='default' size='large' className={isDarkMode? 'project-github-btn btn-secondary__dark-mode':'project-github-btn'} onClick={() => handleGithubClick(title)}>Github</Button>
             </Tooltip>
           </>,
           <>
@@ -103,7 +103,6 @@ function ProjectCard({ title, img, githubLink, liveDemoLink }) {
             </Tooltip>
           </>
         ]}
-
       >
         <h2 className='project-title'>{title}</h2>
       </Card>

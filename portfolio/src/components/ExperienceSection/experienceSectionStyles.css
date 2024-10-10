@@ -70,6 +70,8 @@
   display: flex;
   justify-content: center;
   padding-top: 5px;
+  color: #000;
+  transition: color ease-in-out 0.6s;
 }
 
 .frontend-text,
@@ -87,10 +89,13 @@
 }
 
 
-/* .frontend-label,
-.backend-label {}
+.frontend-label,
+.backend-label {
+  color: #000;
+  transition: color ease-in-out 0.6s;
+}
 
-.frontend-level,
+/* .frontend-level,
 .backend-level {} */
 
 
