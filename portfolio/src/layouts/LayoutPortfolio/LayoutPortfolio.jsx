@@ -79,7 +79,7 @@ function LayoutPortfolio() {
 
   return (
     <Layout className={isDarkMode ? 'app-layout app-layout__dark-mode' : 'app-layout'}>
-      <Header className="app-header">
+      <Header className="app-header" style={{height:'17vh'}}>
         <HeaderContent
           isDarkMode={isDarkMode}
           onChangeDarkMode={onChangeDarkMode}
