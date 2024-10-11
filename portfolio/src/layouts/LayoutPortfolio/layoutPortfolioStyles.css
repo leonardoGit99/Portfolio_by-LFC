@@ -4,9 +4,10 @@
   transition: background ease-in-out 0.6s !important;
 }
 
-.app-layout .ant-layout .ant-layout-header {
-  height: 17vh !important;
+.ant-layout>.ant-layout-header {
+  min-height: 17vh !important;
   background: #f5f5f5 !important;
+  padding: 0 0 !important;
 }
 
 .app-layout__dark-mode {
@@ -16,7 +17,7 @@
 }
 
 
-.ant-layout .ant-layout-footer { 
+.ant-layout .ant-layout-footer {
   height: 25vh !important;
   padding: 0 !important;
   background: #F5F5F5 !important;
