@@ -4,7 +4,7 @@
   transition: background ease-in-out 0.6s !important;
 }
 
-.ant-layout .ant-layout-header {
+.app-layout .ant-layout .ant-layout-header {
   height: 17vh !important;
   background: #f5f5f5 !important;
 }
