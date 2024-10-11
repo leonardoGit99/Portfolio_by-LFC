@@ -7,7 +7,7 @@
 }
 
 .section-title__dark-mode {
-  color: #f9f9f9;
+  color: #E0E0E0;
   transition: color ease-in-out 0.6s !important;
 }
 
@@ -20,7 +20,7 @@
 
 .h3-title__dark-mode,
 .tag__dark-mode {
-  color: #f9f9f9ec !important;
+  color: #E0E0E0 !important;
   transition: color ease-in-out 0.6s !important;
 }
 

@@ -30,14 +30,25 @@ function HeaderContent({ visible, showDrawer, closeDrawer, items, selectedTab, s
       <div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
           {!isMobile ?
-            <NavDesktop
-              isDarkMode={isDarkMode}
-              items={items}
-              selectedTab={selectedTab}
-              setSelectedTab={setSelectedTab}
-            />
+            <>
+              <NavDesktop
+                isDarkMode={isDarkMode}
+                items={items}
+                selectedTab={selectedTab}
+                setSelectedTab={setSelectedTab}
+              />
+              <Switch
+                size='small'
+                onChange={onChangeDarkMode}
+                checked={isDarkMode}
+                checkedChildren={<MoonFilled />}
+                unCheckedChildren={<SunFilled />}
+              />
+            </>
             :
             <NavMobile
+              isDarkMode={isDarkMode}
+              onChangeDarkMode={onChangeDarkMode}
               visible={visible}
               showDrawer={showDrawer}
               closeDrawer={closeDrawer}
@@ -45,13 +56,6 @@ function HeaderContent({ visible, showDrawer, closeDrawer, items, selectedTab, s
               setSelectedTab={setSelectedTab}
             />
           }
-          <Switch
-            size='small'
-            onChange={onChangeDarkMode}
-            checked={isDarkMode}
-            checkedChildren={<MoonFilled />}
-            unCheckedChildren={<SunFilled />}
-          />
         </div>
       </div>
     </div>

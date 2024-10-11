@@ -61,10 +61,11 @@ function ProjectsSection({ handleArrowClick, arrowIcon, isDarkMode }) {
               />
             </List.Item>
           )}
+          className={isDarkMode ? 'list_dark-mode' : ''}
         />
       </div>
       <img
-        className={isDarkMode? 'arrow-icon arrow-icon__dark-mode':'arrow-icon'}
+        className={isDarkMode ? 'arrow-icon arrow-icon__dark-mode' : 'arrow-icon'}
         src={arrowIcon}
         alt='arrow icon'
         onClick={() => handleArrowClick("contact")}

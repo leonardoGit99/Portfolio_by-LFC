@@ -4,22 +4,22 @@
   align-items: center;
   height: 100%;
   background: #F5F5F5;
-  transition: background  ease-in-out 0.6s;
+  transition: background ease-in-out 0.6s;
 }
 
 .header-container__dark-mode {
   background: #000C17 !important;
-  transition: background  ease-in-out 0.6s;
+  transition: background ease-in-out 0.6s;
 }
 
 .logo {
   font-size: 2rem;
-  color: #000 !important; 
+  color: #000 !important;
   transition: color ease-in-out 0.6s;
 }
 
 .logo__dark-mode {
-  color: #f9f9f9 !important; 
+  color: #E0E0E0 !important;
   transition: color ease-in-out 0.6s;
 }
 
@@ -45,15 +45,15 @@
   .logo {
     font-size: 1.6rem;
   }
-}  
+}
 
-@media (768px <= width <=1024px) {
+@media (768px <=width <=1024px) {
   .logo {
     font-size: 1.7rem;
   }
 }
 
-@media (1024px <= width <=1200px) {
+@media (1024px <=width <=1200px) {
   .logo {
     font-size: 1.8rem;
   }

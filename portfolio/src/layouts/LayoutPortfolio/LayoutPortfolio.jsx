@@ -74,6 +74,9 @@ function LayoutPortfolio() {
       toggleDarkMode();
     }
   }
+
+
+
   return (
     <Layout className={isDarkMode ? 'app-layout app-layout__dark-mode' : 'app-layout'}>
       <Header className="app-header">

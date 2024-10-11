@@ -1,9 +1,20 @@
 .burger-icon {
   display: block;
   font-size: 1.5rem !important;
+  color: #000;
+  transition: filter ease-in-out 0.6s !important;
 }
 
-.burger-icon:hover{
+.burger-icon:hover {
+  color: rgb(22, 119, 255);
+}
+
+.burger-icon__dark-mode {
+  color: #F9F9F9 !important;
+  transition: filter ease-in-out 0.6s !important;
+}
+
+.burger-icon__dark-mode:hover {
   color: rgb(22, 119, 255);
 }
 
@@ -11,16 +22,50 @@
 
 .drawer {
   background: #F5F5F5 !important;
+  /* transition: background ease-in-out 0.6s; */
+}
+
+.drawer__dark-mode {
+  background: rgba(0, 17, 34, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  color: #F5F5F5 !important;
+  /* transition: background backdrop-filter color ease-in-out 0.6s; */
+}
+
+.drawer__dark-mode .ant-drawer-close {
+  color: #F5F5F5 !important;
+}
+
+.title-drawer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-mobile {
   display: block;
-  background: #F5F5F5;
+  width: 100%;
+  background: #F5F5F5 !important;
+  /* transition: background ease-in-out 0.6s; */
 }
+
+.nav-movile__dark-mode {
+  background-color: rgba(0, 17, 34, 0.1) !important;
+  color: #F5F5F5 !important;
+  /* transition: background-color  color ease-in-out 0.6s; */
+}
+
+.nav-mobile .ant-drawer-body {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 
 .mobile-menu-icon {
   display: none;
 }
+
 
 
 @media (280px <=width <=1200px) {
@@ -34,28 +79,28 @@
   .burger-icon {
     font-size: 1.5rem !important;
   }
-  
+
 }
 
- @media (480px <=width <=576px) {
+@media (480px <=width <=576px) {
   .burger-icon {
     font-size: 1.6rem !important;
   }
- }
+}
 
- @media (576px <=width <=768px) {
+@media (576px <=width <=768px) {
   .burger-icon {
     font-size: 1.6rem !important;
   }
- }  
+}
 
- @media (768px <= width <=1024px) {
+@media (768px <=width <=1024px) {
   .burger-icon {
     font-size: 1.7rem !important;
   }
- }
+}
 
-@media (1024px <= width <=1200px) {
+@media (1024px <=width <=1200px) {
   .burger-icon {
     font-size: 1.8rem !important;
   }

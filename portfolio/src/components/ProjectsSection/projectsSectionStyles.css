@@ -25,6 +25,38 @@
   justify-content: space-around !important;
 }
 
+/* Styles for list pagination in  dark mode */
+.list_dark-mode .ant-pagination .ant-pagination-item:not(.ant-pagination-item-active):hover {
+  background-color: #e0e0e09d !important; /* Un azul grisáceo más suave para hover */
+}
+
+.list_dark-mode .ant-pagination-item {
+  color: rgba(255, 255, 255, 0.65) !important; 
+  background-color: #E0E0E0 !important; 
+  border-color: #000000; 
+}
+
+
+
+.list_dark-mode .ant-pagination-item:not(.ant-pagination-item-active) a{
+  color: #E0E0E0 !important; 
+  background-color: #000C17!important; 
+  border-color: #000000; 
+}
+
+.list_dark-mode .ant-pagination-item-active {
+  background-color: #000000 !important; 
+  border-color: #1677FF !important; 
+  color: #FFFFFF !important; 
+}
+
+.list_dark-mode .ant-pagination-item-link {
+  color: rgba(255, 255, 255, 0.85) !important; /* Flechas de navegación en blanco suave */
+}
+
+.list_dark-mode .ant-pagination-item-link:hover {
+  color: #ffffff !important; /* Flechas de navegación blancas en hover */
+}
 
 @media (320px <=width <=480px) {
   #projects {
