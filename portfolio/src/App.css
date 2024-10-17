@@ -22,6 +22,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 @keyframes reveal {
   from {
     opacity: 0;
