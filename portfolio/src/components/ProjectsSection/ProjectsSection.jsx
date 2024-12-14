@@ -4,11 +4,18 @@ import ProjectCard from '../ProjectCard/ProjectCard';
 import bettyStoreProjectImg from '../../assets/bettyStore.webp';
 import ezRentalProjectImg from '../../assets/ezRental.webp';
 import taskFlow from '../../assets/taskFlow.webp';
+import conexionAcademicaImg from '../../assets/conexion-academica.webp'
 import './projectsSectionStyles.css';
 import '../../components/styles/globalStyles.css';
 
 function ProjectsSection({ handleArrowClick, arrowIcon, isDarkMode }) {
   const projects = [
+    {
+      title: "Conexión Académica",
+      img: conexionAcademicaImg,
+      githubLink: "https://github.com/No-Country-simulation/c22-22-t-webapp",
+      liveDemoLink: "https://conexion-academica.onrender.com"
+    },
     {
       title: "TaskFlow",
       img: taskFlow,
@@ -24,7 +31,7 @@ function ProjectsSection({ handleArrowClick, arrowIcon, isDarkMode }) {
       img: bettyStoreProjectImg,
       githubLink: "https://github.com/leonardoGit99/BettyStore",
       liveDemoLink: "https://truebettystore.000webhostapp.com/"
-    },
+    }
   ]
   return (
     <section id="projects">
