@@ -9,6 +9,10 @@ function ProjectCard({ title, img, githubLink, liveDemoLink, isDarkMode }) {
     bettystore: {
       admin: ["betty2023admin", "AdminBetty1#"],
       seller: ["daril2023vendedor", "VendDaril2&/"]
+    },
+    conexionacad: {
+      estA: ["4278655", "conexionacademica"],
+      estB: ["4475431", "conexionacademica"]
     }
   }
 
@@ -19,6 +23,8 @@ function ProjectCard({ title, img, githubLink, liveDemoLink, isDarkMode }) {
       window.open(githubLink);
     } else if (project == "TaskFlow") {
       window.open(githubLink);
+    } else if (project == "Conexión Académica") {
+      window.open(githubLink)
     }
   }
 
@@ -64,6 +70,34 @@ function ProjectCard({ title, img, githubLink, liveDemoLink, isDarkMode }) {
           window.open(liveDemoLink);
         },
       });
+    } else if (project == "Conexión Académica") {
+      Modal.confirm({
+        title: "Conexión Académica",
+        content: (
+          <>
+            Academic Connection is a web application designed to connect students and parents with secondary schools. Our platform facilitates the monitoring of academic progress, encourages learning, and highlights educational achievements.
+            <div className='modal-credentials-content'>
+              <div className='credentials-container'>
+                <div>
+                  <p><span className='credentials'><UserOutlined /> Estudiante A: </span> {credentials.conexionacad.estA[0]}</p>
+                  <p><span className='credentials'><KeyOutlined /> Pass: </span>{credentials.conexionacad.estA[1]}</p>
+                </div>
+                <Button size='small' onClick={() => copyToClipboard(credentials.conexionacad.estA[0], credentials.conexionacad.estA[1])}><CopyOutlined /></Button>
+              </div>
+              <div className='credentials-container'>
+                <div>
+                  <p><span className='credentials'><UserOutlined /> Estudiante B: </span> {credentials.conexionacad.estB[0]}</p>
+                  <p><span className='credentials'><KeyOutlined /> Pass: </span> {credentials.conexionacad.estB[1]}</p>
+                </div>
+                <Button size='small' onClick={() => copyToClipboard(credentials.conexionacad.estB[0], credentials.conexionacad.estB[1])}><CopyOutlined /></Button>
+              </div>
+            </div>
+          </>
+        ),
+        onOk() {
+          window.open(liveDemoLink);
+        },
+      });
     }
   }
 
@@ -81,7 +115,7 @@ function ProjectCard({ title, img, githubLink, liveDemoLink, isDarkMode }) {
   return (
     <>
       <Card
-        className={isDarkMode?'project-card project-card__dark-mode':'project-card'}
+        className={isDarkMode ? 'project-card project-card__dark-mode' : 'project-card'}
         cover={
           <div>
             <img
@@ -94,7 +128,7 @@ function ProjectCard({ title, img, githubLink, liveDemoLink, isDarkMode }) {
         actions={[
           <>
             <Tooltip title="Click to see the source code" placement='bottom'>
-              <Button type='default' size='large' className={isDarkMode? 'project-github-btn btn-secondary__dark-mode':'project-github-btn'} onClick={() => handleGithubClick(title)}>Github</Button>
+              <Button type='default' size='large' className={isDarkMode ? 'project-github-btn btn-secondary__dark-mode' : 'project-github-btn'} onClick={() => handleGithubClick(title)}>Github</Button>
             </Tooltip>
           </>,
           <>
