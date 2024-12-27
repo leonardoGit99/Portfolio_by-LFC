@@ -2,18 +2,20 @@ import React from 'react';
 import { List } from 'antd';
 import { AntDesignOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faJs, faJava, faNode, faHtml5, faCss3Alt, faReact, faBootstrap, faPhp, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faN, faT } from '@fortawesome/free-solid-svg-icons';
+import { faJs, faJava, faNode, faHtml5, faCss3Alt, faReact, faBootstrap, faPhp, faGitAlt, faFigma } from '@fortawesome/free-brands-svg-icons';
 import '../../components/styles/globalStyles.css';
 import './experienceSectionStyles.css';
 function ExperienceSection({ handleArrowClick, arrowIcon, isDarkMode }) {
   const frontendList = [
-    { icon: <FontAwesomeIcon icon={faHtml5} />, label: 'HTML', level: 'Experienced' },
-    { icon: <FontAwesomeIcon icon={faCss3Alt} />, label: 'CSS', level: 'Intermediate' },
-    { icon: <FontAwesomeIcon icon={faJs} />, label: 'TypeScript', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faJs} />, label: 'Javascript', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faJs} />, label: 'TypeScript', level: 'Intermediate' },
     { icon: <FontAwesomeIcon icon={faReact} />, label: 'ReactJs', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faN} />, label: 'Nextjs', level: 'Intermediate' },
+    { icon: <FontAwesomeIcon icon={faT} />, label: 'Tailwind', level: 'Intermediate' },
     { icon: <AntDesignOutlined />, label: 'Ant Design', level: 'Experienced' },
-    { icon: <FontAwesomeIcon icon={faBootstrap} />, label: 'Bootstrap', level: 'Intermediate' },
+    { icon: <FontAwesomeIcon icon={faBootstrap} />, label: 'Bootstrap', level: 'Experienced' },
+    { icon: <FontAwesomeIcon icon={faFigma} />, label: 'Figma', level: 'Experienced' },
   ]
 
   const backendList = [

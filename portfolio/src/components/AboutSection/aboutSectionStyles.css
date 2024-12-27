@@ -54,6 +54,8 @@
   text-align: center;
 }
 
+
+
 .experience-icon, .education-icon {
   display: block;
   font-size: 1.5rem;
@@ -63,6 +65,11 @@
 
 .experience__bold {
   font-weight: 600;
+}
+
+.margin-none {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .about_p2 {
